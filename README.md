@@ -9,6 +9,7 @@ y = 4 * x1 + 2 * x2
 
 $$
 
+
 Se $x1$ recebe o valor 2, em vez de um valor baseline de 0, então nosso valor de SHAP para $x1$ seria 8 (4 vezes 2).
 
 Esses são mais difíceis de calcular com os modelos sofisticados que usamos na prática. Mas, por meio de alguma inteligência algorítmica, os valores de Shap nos permitem decompor qualquer previsão na soma dos efeitos de cada valor de recurso, produzindo um gráfico como este:
@@ -21,7 +22,7 @@ Além desse bom detalhamento para cada previsão, a [biblioteca Shap] (https://g
 
 # Plotagens de resumo
 
-[Importância da permutação](https://github.com/brunobarella/Permutation_Importance_eli5) é ótimo porque criou medidas numéricas simples para ver quais recursos importavam para um modelo. Isso nos ajudou a fazer comparações entre recursos facilmente e você pode apresentar os gráficos resultantes para públicos não técnicos.
+![Importância da permutação] (https://github.com/brunobarella/Permutation_Importance_eli5) é ótimo porque criou medidas numéricas simples para ver quais recursos importavam para um modelo. Isso nos ajudou a fazer comparações entre recursos facilmente e você pode apresentar os gráficos resultantes para públicos não técnicos.
 
 Mas não diz como cada recurso é importante. Se um recurso tem importância de permutação média, isso pode significar que ele tem
 
