@@ -3,14 +3,13 @@
 Os valores SHAP mostram o quanto um determinado recurso mudou nossa previsão (em comparação se tivéssemos feito essa previsão em algum valor de baseline desse recurso).
 
 Por exemplo, considere um modelo simples:
-
-$$
-y = 4 * x1 + 2 * x2
-
-$$
+<img src="https://render.githubusercontent.com/render/math?math=\Large y = 4 * x_{1} %2B 2 * x_{2}">
 
 
-Se $x1$ recebe o valor 2, em vez de um valor baseline de 0, então nosso valor de SHAP para $x1$ seria 8 (4 vezes 2).
+
+
+
+Se <img src="https://render.githubusercontent.com/render/math?math=\Large x_{1}"> recebe o valor 2, em vez de um valor baseline de 0, então nosso valor de SHAP para <img src="https://render.githubusercontent.com/render/math?math=\Large x_{1}"> seria 8 (4 vezes 2).
 
 Esses são mais difíceis de calcular com os modelos sofisticados que usamos na prática. Mas, por meio de alguma inteligência algorítmica, os valores de Shap nos permitem decompor qualquer previsão na soma dos efeitos de cada valor de recurso, produzindo um gráfico como este:
 
